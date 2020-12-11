@@ -14,7 +14,7 @@ barplot(totalNEI[, Emissions] # plot
         , names = totalNEI[, year]
         , xlab = "Years", ylab = "total PM'[2.5]*' emission"
         , main = "Total PM'[2.5]*' emissions at various years")
-dev.copy(png, file="plot1.png", height=640, width=640)
+dev.copy(png, file="PLOT1.png", height=640, width=640)
 dev.off()
 
 
