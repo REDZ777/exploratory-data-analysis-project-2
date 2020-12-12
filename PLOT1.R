@@ -10,7 +10,7 @@ SCC <- data.table::as.data.table(x = readRDS(file = "Source_Classification_Code.
 
 totalNEI <- NEI[, lapply(.SD, sum, na.rm = TRUE), .SDcols = c("Emissions"), by = year] # summing 
 
-barplot(totalNEI[, Emissions], names = totalNEI[, year], xlab = "Years", ylab = "total PM'[2.5]*' emission", main = "Total PM'[2.5]*' emissions at various years") #plot
+barplot(totalNEI[, Emissions], names = totalNEI[, year], xlab = "Years", ylab = expression("total PM'[2.5]*' emission"), main = expression("Total PM'[2.5]*' emissions at various years") #plot
 dev.copy(png, file="PLOT1.png", height=640, width=640)
 dev.off()
 
